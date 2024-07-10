@@ -1,0 +1,91 @@
+* {
+    margin: 0;
+}
+
+body {
+    background-color: rgba(255, 255, 255, 0.644);
+    height: 100vh;
+}
+
+.interface {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 20px auto;
+    background-color: #158b9b;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1, h2 {
+    margin-top: 15px;
+    text-align: center;
+    color: #000000;
+}
+
+.saldo {
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.transacoes {
+    margin-bottom: 20px;
+}
+
+.transacoes form {
+    margin-top: 20px;
+    display: flex;
+    height: 30px;
+    gap: 10px;
+}
+
+.transacoes label {
+    font-weight: bold;
+    font-size: 14px; 
+}
+
+.transacoes input, .transacoes select {
+    width: 100%;
+    padding: 8px;
+    font-size: 10px;
+}
+
+.buttom_adicionar { 
+    font-size: 10px; 
+    padding: 10px 30px; 
+    background-color: #1a861e;
+    color: #000000; 
+    border: none;
+    cursor: pointer;
+    text-align: center; 
+    
+}
+
+.transacoes button:hover {
+    background-color: #45a049;
+}
+
+.balanco {
+    margin-top: 15px;
+}
+
+.balanco table {
+    margin-top: 20px;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.balanco th, .balanco td {
+    border: 1px solid #ad1313;
+    padding: 8px;
+    text-align: center;
+}
+
+.balanco th {
+    background-color: #bb2121;
+}

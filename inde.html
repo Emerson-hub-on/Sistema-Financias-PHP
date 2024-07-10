@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema Financeiro Pessoal</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.3.1/jspdf.umd.min.js"></script>
+
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Sistema Financeiro Pessoal</h1>
+            
+            <div class="saldo">
+                <h2>Saldo:</h2>
+                <p id="saldo">Carregando saldo...</p>
+            </div>
+        </div>
+    </header>
+    <main>
+    <section class="interface">
+        <div class="container">
+        <div class="transacoes">
+            <h2>Adicionar Transação</h2>
+            <form action="adicionar_transacao.php" method="POST">
+                <label for="tipo">Tipo:</label>
+                <select name="tipo" id="tipo">
+                    <option value="R">Receita</option>
+                    <option value="D">Despesa</option>
+                </select><br><br>
+                <label for="descricao">Descrição:</label>
+                <input type="text" name="descricao" id="descricao" required><br><br>
+                <label for="valor">Valor:</label>
+                <input type="number" name="valor" id="valor" step="0.01" required><br><br>
+                <label for="data">Data:</label>
+                <input type="date" name="data" id="data" required><br><br>
+                <button class="buttom_adicionar" type="submit">Adicionar Transação</button>
+            </form>
+        </div>
+
+        <div class="balanco">
+            <h2>Balanço Mensal</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Data</th>
+                        <th>Descrição</th>
+                        <th>Tipo</th>
+                        <th>Valor</th>
+                    </tr>
+                </thead>
+                <tbody id="tabela-transacoes">
+                    <!-- Aqui serão listadas as transações -->
+                </tbody>
+            </table>
+            
+        </div>
+    </div>
+    </div>
+</section>
+</main>
+    
+    <script src="scripts.js"></script>
+</body>
+</html>
